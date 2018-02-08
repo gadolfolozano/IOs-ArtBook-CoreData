@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916E80B22027D8FD00A50D3D /* juecarla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 916E80B12027D8FD00A50D3D /* juecarla.jpg */; };
 		9182504120266C7500C9BF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182504020266C7500C9BF4E /* AppDelegate.swift */; };
 		9182504320266C7500C9BF4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182504220266C7500C9BF4E /* ViewController.swift */; };
 		9182504620266C7500C9BF4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9182504420266C7500C9BF4E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		916E80B12027D8FD00A50D3D /* juecarla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = juecarla.jpg; sourceTree = "<group>"; };
 		9182503D20266C7500C9BF4E /* album art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "album art.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9182504020266C7500C9BF4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9182504220266C7500C9BF4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,9 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		916E80B02027D8A900A50D3D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				916E80B12027D8FD00A50D3D /* juecarla.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		9182503420266C7500C9BF4E = {
 			isa = PBXGroup;
 			children = (
+				916E80B02027D8A900A50D3D /* images */,
 				9182503F20266C7500C9BF4E /* album art */,
 				9182503E20266C7500C9BF4E /* Products */,
 			);
@@ -60,12 +71,12 @@
 			children = (
 				9182504020266C7500C9BF4E /* AppDelegate.swift */,
 				9182504220266C7500C9BF4E /* ViewController.swift */,
+				918250552026AB7300C9BF4E /* DetailViewController.swift */,
 				9182504420266C7500C9BF4E /* Main.storyboard */,
 				9182504A20266C7500C9BF4E /* Assets.xcassets */,
 				9182504C20266C7500C9BF4E /* LaunchScreen.storyboard */,
 				9182504F20266C7500C9BF4E /* Info.plist */,
 				9182504720266C7500C9BF4E /* album_art.xcdatamodeld */,
-				918250552026AB7300C9BF4E /* DetailViewController.swift */,
 			);
 			path = "album art";
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 			files = (
 				9182504E20266C7500C9BF4E /* LaunchScreen.storyboard in Resources */,
 				9182504B20266C7500C9BF4E /* Assets.xcassets in Resources */,
+				916E80B22027D8FD00A50D3D /* juecarla.jpg in Resources */,
 				9182504620266C7500C9BF4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

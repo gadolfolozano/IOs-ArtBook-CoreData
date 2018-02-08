@@ -63,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHf-Hz-Hpu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juecarla.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wHf-Hz-Hpu">
                                 <rect key="frame" x="67" y="139" width="240" height="128"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vi-cV-RNQ">
@@ -78,29 +78,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-JW-lrN">
-                                <rect key="frame" x="150" y="450" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-JW-lrN">
+                                <rect key="frame" x="123" y="450" width="128" height="31"/>
                                 <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="onSaveClicked:" destination="h2n-UX-udM" eventType="touchUpInside" id="kq6-Ot-Zqg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="centerX" secondItem="Auo-EQ-QOa" secondAttribute="centerX" id="6h9-Pj-N8c"/>
-                            <constraint firstItem="cib-Ce-gL7" firstAttribute="centerX" secondItem="ZgU-JW-lrN" secondAttribute="centerX" id="Ehp-PK-npy"/>
-                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="leading" secondItem="cib-Ce-gL7" secondAttribute="leading" id="Gct-Wp-1u8"/>
-                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="trailing" secondItem="cib-Ce-gL7" secondAttribute="trailing" id="ILf-8V-3vh"/>
-                            <constraint firstItem="cib-Ce-gL7" firstAttribute="top" secondItem="0vi-cV-RNQ" secondAttribute="bottom" constant="33" id="K28-HQ-o19"/>
-                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="top" secondItem="YXn-bq-ynv" secondAttribute="top" constant="75" id="OgI-ib-GG1"/>
-                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="top" secondItem="wHf-Hz-Hpu" secondAttribute="bottom" constant="51" id="ScM-Vu-R6x"/>
-                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="leading" secondItem="YXn-bq-ynv" secondAttribute="leading" constant="98" id="WIp-x6-YfL"/>
-                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="centerY" secondItem="Auo-EQ-QOa" secondAttribute="centerY" id="Wm7-2q-oPg"/>
-                            <constraint firstItem="ZgU-JW-lrN" firstAttribute="leading" secondItem="YXn-bq-ynv" secondAttribute="leading" constant="150" id="dqD-Ha-BR3"/>
-                            <constraint firstItem="ZgU-JW-lrN" firstAttribute="top" secondItem="cib-Ce-gL7" secondAttribute="bottom" constant="39" id="fp3-47-Evi"/>
-                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="leading" secondItem="YXn-bq-ynv" secondAttribute="leading" constant="67" id="tsz-3E-VN8"/>
-                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="centerX" secondItem="0vi-cV-RNQ" secondAttribute="centerX" id="zuv-i8-cRT"/>
+                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="top" secondItem="wHf-Hz-Hpu" secondAttribute="bottom" constant="51" id="1By-6e-gSE"/>
+                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="centerY" secondItem="Auo-EQ-QOa" secondAttribute="centerY" id="8TQ-qh-mP2"/>
+                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="top" secondItem="YXn-bq-ynv" secondAttribute="top" constant="75" id="FhY-UE-2DT"/>
+                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="centerX" secondItem="Auo-EQ-QOa" secondAttribute="centerX" id="Fp9-UO-6Xv"/>
+                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="leading" secondItem="YXn-bq-ynv" secondAttribute="leading" constant="67" id="LS6-WG-sJn"/>
+                            <constraint firstItem="wHf-Hz-Hpu" firstAttribute="centerX" secondItem="0vi-cV-RNQ" secondAttribute="centerX" id="MDd-Yg-U8V"/>
+                            <constraint firstItem="cib-Ce-gL7" firstAttribute="top" secondItem="0vi-cV-RNQ" secondAttribute="bottom" constant="33" id="NkP-u5-9Hq"/>
+                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="leading" secondItem="YXn-bq-ynv" secondAttribute="leading" constant="98" id="Wza-ld-bNS"/>
+                            <constraint firstItem="ZgU-JW-lrN" firstAttribute="top" secondItem="cib-Ce-gL7" secondAttribute="bottom" constant="39" id="dML-pG-fbG"/>
+                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="leading" secondItem="cib-Ce-gL7" secondAttribute="leading" id="jW8-6G-d4z"/>
+                            <constraint firstItem="cib-Ce-gL7" firstAttribute="centerX" secondItem="ZgU-JW-lrN" secondAttribute="centerX" id="rnp-Qp-aiD"/>
+                            <constraint firstItem="0vi-cV-RNQ" firstAttribute="trailing" secondItem="cib-Ce-gL7" secondAttribute="trailing" id="vLa-Fm-XMA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YXn-bq-ynv"/>
                     </view>
+                    <connections>
+                        <outlet property="mCommentTxtField" destination="cib-Ce-gL7" id="4eC-HV-za6"/>
+                        <outlet property="mImageView" destination="wHf-Hz-Hpu" id="a94-ev-Hoq"/>
+                        <outlet property="mNameTxtField" destination="0vi-cV-RNQ" id="f7e-dd-6Vb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWD-Hl-uOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,4 +132,7 @@
             <point key="canvasLocation" x="-372" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="juecarla.jpg" width="720" height="1280"/>
+    </resources>
 </document>
