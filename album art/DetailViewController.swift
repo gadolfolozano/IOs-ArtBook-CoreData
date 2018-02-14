@@ -16,12 +16,23 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     var imagePicker = UIImagePickerController()
     
+    var selectedPicture : Paint?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         mImageView.isUserInteractionEnabled = true
         let gestureReconizer = UITapGestureRecognizer(target: self, action: #selector(DetailViewController.selectImage))
         mImageView.addGestureRecognizer(gestureReconizer)
+        
+        print(selectedPicture?.name as Any)
+        
+        if let _ = selectedPicture {
+            mNameTxtField.text = selectedPicture?.name
+            mCommentTxtField.text = selectedPicture?.comment
+            mImageView.image = selectedPicture?.image
+        }
+        
     }
     
     @objc func selectImage(){
@@ -60,6 +71,8 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
             print("error")
         }
         
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"paintingCreated"), object: nil)
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
 }

@@ -48,6 +48,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mTableView" destination="sGP-hs-XtW" id="kPx-Xf-gLH"/>
                         <segue destination="h2n-UX-udM" kind="show" identifier="showDetailViewController" id="fkf-Dq-hZ8"/>
                     </connections>
                 </viewController>
